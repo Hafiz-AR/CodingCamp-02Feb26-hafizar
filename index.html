@@ -11,6 +11,8 @@
     <section>
         <h1 class="text-default">To-do List</h1>
         <form id='add-list'>
+            <label class="text-default">Add new activity</label>
+            <br>
             <input id="add-text" type="text" placeholder="Add to your list">
             <input id="add-date" type="date">
         </form>
@@ -18,14 +20,16 @@
     </section>
     <br><hr>
     <section>
-        <form>
+        <form id="filter-form">
             <label class="text-default">Filter</label>
             <br>
             <input id="filter-text" type="text" placeholder="Find an item">
             <input id="filter-date" type="date">
         </form>
-        <button id="filter-button" onclick="filterToDo()">Apply Filter</button>
-        <button id="delete-button" onclick="deleteToDo()">Clear List</button>
+        <section id="misc-buttons">
+            <button id="filter-button" onclick="filterToDo()">Apply Filter</button>
+            <button id="delete-button" onclick="deleteToDo()">Clear List</button>
+        </section>
     </section>
     <section id="to-do-list">
         <table id="to-do-table">
@@ -33,12 +37,10 @@
                 <th class="text-default" width="80%">Activity</th>
                 <th class="text-default" width="20%">Date</th>
             </tr>
-            <section id="item-list">
-                <tr>
-                    <td class="text-thin">-</td>
-                    <td class="text-thin">-</td>
-                </tr>
-            </section>
+            <tr>
+                <td class="text-thin">-</td>
+                <td class="text-thin">-</td>
+            </tr>
         </table>
     </section>
 </body>
