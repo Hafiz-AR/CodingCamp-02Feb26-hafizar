@@ -1,0 +1,46 @@
+body {
+    background-color:rgb(39, 39, 41);
+    justify-items: center;
+    align-content: center;
+    height: 100vh;
+}
+
+hr {
+    width:100vh;
+}
+
+.text-default {
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color:whitesmoke;
+}
+
+.text-thin {
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    color:whitesmoke;
+}
+
+#to-do-list {
+    width:80vh;
+    margin-top: 5vh;
+}
+
+#delete-button {
+    font-weight: bold;
+    width:12vh;
+    height: 3vh;
+    background-color: rgb(255, 0, 0);
+}
+
+table {
+    width: 90vh;
+}
+
+table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+  }
+
+tr:hover {background-color: rgb(156, 156, 166, 0.2);}
